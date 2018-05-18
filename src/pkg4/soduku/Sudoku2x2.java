@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
@@ -45,6 +47,7 @@ public class Sudoku2x2 extends javax.swing.JFrame {
 
     public boolean validar(){
        
+        
         boolean resul=false;
         /*
         for(int i=0;i<matriz.length;i++){
@@ -262,9 +265,14 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                         }
                     }
             }
-            if(validar()==false){
-        try{    
+            
+            if(!validar()){
+            try{    
            
+            if(conta>=10){
+                JOptionPane.showMessageDialog(null, " hay demasiadas soluciones voy a adivinar una ");
+
+            }
                 
             
              for (int uis=0; uis < matriz.length; uis++) {
@@ -276,10 +284,7 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                     }
             }
              System.out.println("ceros es "+conta);
-            if(conta>=10){
-                JOptionPane.showMessageDialog(null, " hay demasiadas soluciones voy a adivinar una ");
-
-            }
+            
             
             
             
@@ -305,6 +310,14 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                 
                 if(c==0){
                     if(i==0 & j==0){
+                        try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
+                       
+                        
                          ArrayList<String> a=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                          a.add("1");a.add("2");a.add("3");a.add("4");
@@ -359,6 +372,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                  
                  if(i==0&& j==1){
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                      ArrayList<String> b=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      b.add("1");b.add("2");b.add("3");b.add("4");
@@ -412,7 +431,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                  
                  if(i==0&& j==2){
-                     
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                      ArrayList<String> d=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      d.add("1");d.add("2");d.add("3");d.add("4");
@@ -473,6 +497,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                  
                  if(i==0&& j==3){
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                      ArrayList<String> e=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      e.add("1");e.add("2");e.add("3");e.add("4");
@@ -532,6 +562,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                  //segunda filaaa
                   if(i==1&& j==0){
+                        try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                       ArrayList<String> f=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      f.add("1");f.add("2");f.add("3");f.add("4");
@@ -590,6 +626,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                   
                  if(i==1&& j==1){
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                      ArrayList<String> g=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      g.add("1");g.add("2");g.add("3");g.add("4");
@@ -646,6 +688,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                  
                  if(i==1&& j==2){
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                      ArrayList<String> h=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      h.add("1");h.add("2");h.add("3");h.add("4");
@@ -707,6 +755,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                  
                  if(i==1&& j==3){
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                       ArrayList<String> k=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      k.add("1");k.add("2");k.add("3");k.add("4");
@@ -763,6 +817,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  
                  //tercer filaa
                  if(i==2&& j==0){
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                      ArrayList<String> l=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      l.add("1");l.add("2");l.add("3");l.add("4");
@@ -820,7 +880,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                  
                  if(i==2 && j==1){
-                     
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                      ArrayList<String> m=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      m.add("1");m.add("2");m.add("3");m.add("4");
@@ -875,6 +940,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                  
                  if(i==2 && j==2){
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                       ArrayList<String> n=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      n.add("1");n.add("2");n.add("3");n.add("4");
@@ -931,6 +1002,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                  
                  if(i==2 && j==3){
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                      ArrayList<String> p=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      p.add("1");p.add("2");p.add("3");p.add("4");
@@ -986,6 +1063,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                  //cuarta fila
                  if(i==3 && j==0){
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                      ArrayList<String> p=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      p.add("1");p.add("2");p.add("3");p.add("4");
@@ -1043,6 +1126,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                  
                  if(i==3 && j==1){
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                      ArrayList<String> rr=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      rr.add("1");rr.add("2");rr.add("3");rr.add("4");
@@ -1098,6 +1187,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  
                   
                  if(i==3 && j==2){
+                       try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                      ArrayList<String> pp=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      pp.add("1");pp.add("2");pp.add("3");pp.add("4");
@@ -1152,6 +1247,12 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                  }
                    
                     if(i==3 && j==3){
+                          try {
+                               //se pausa el sistema dos segundos
+                               Thread.sleep(100);
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(Sudoku2x2.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                         ArrayList<String> w=new ArrayList<String>(); //Declaración y creación del ArrayList de enteros.
                      
                      w.add("1");w.add("2");w.add("3");w.add("4");
@@ -1256,7 +1357,10 @@ public class Sudoku2x2 extends javax.swing.JFrame {
                 tyu++;
             }      
         }
-        }JOptionPane.showMessageDialog(null, "NO EXISTE SOLUCION");
+        }
+        else{
+                JOptionPane.showMessageDialog(null, "NO EXISTE SOLUCION");
+            }
          panel.updateUI();
             
         
@@ -1340,6 +1444,7 @@ void crearBotones(){
         int width=pantalla.width;
         setSize(width/2,height/2);
         this.setLocationRelativeTo(null);
+this.setResizable(false);
 }
 
 
